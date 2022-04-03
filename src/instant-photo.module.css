@@ -1,0 +1,90 @@
+.photo46mmSmall {
+  margin: 12px 18px 60px;
+  top: 15px;
+  width: 207px;
+  height: 288px;
+}
+
+.photo46mmLarge {
+  margin: 16px 24px 80px;
+  top: 20px;
+  width: 276px;
+  height: 384px;
+}
+
+.frame46mmSmall {
+  width: 243px;
+  height: 378px;
+  min-width: 243px;
+  min-height: 378px;
+}
+
+.frame46mmLarge {
+  width: 324px;
+  height: 504px;
+  min-width: 324px;
+  min-height: 504px;
+}
+
+.photo99mmSmall {
+  margin: 12px 18px 60px;
+  position: absolute;
+  top: 15px;
+  width: 445.5px;
+  height: 288px;
+}
+
+.photo99mmLarge {
+  margin: 16px 24px 80px;
+  position: absolute;
+  top: 20px;
+  width: 594px;
+  height: 384px;
+}
+
+.frame99mmSmall {
+  width: 486px;
+  height: 378px;
+  min-width: 486px;
+  min-height: 378px;
+}
+
+.frame99mmLarge {
+  width: 648px;
+  height: 504px;
+  min-width: 648px;
+  min-height: 504px;
+}
+
+.photo {
+  box-shadow: inset 0 0 10px #000000;
+  position: absolute;
+  border-radius: 1px;
+}
+
+.photoFilter {
+  background-image: url("https://imagedelivery.net/_c4jAFjxf-vVYrGvQV8G2A/847f481e-b6bf-43da-8ce6-39313c19b600/inlinelarge");
+  background-size: cover;
+  opacity: 80%;
+}
+
+.photoBackground {
+  background-color: #2d3436;
+  background-image: linear-gradient(315deg, #2d3436 0%, #000000 74%);
+}
+
+.frame {
+  opacity: 1;
+  background-image: url("https://www.transparenttextures.com/patterns/absurdity.png"),
+    linear-gradient(#f0f0f0, ghostwhite);
+  background-color: #f0f0f0;
+  box-shadow: 0 0.2rem 1.2rem rgba(0, 0, 0, 0.2);
+  position: relative;
+  border-radius: 2px;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}

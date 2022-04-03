@@ -1,0 +1,47 @@
+{
+  "name": "instant-photo",
+  "private": true,
+  "version": "0.0.0",
+  "license": "MIT",
+  "contributors": [
+    "Alex Spence <spelexander93@gmail.com>"
+  ],
+  "main": "dist/index.js",
+  "repository": "https://github.com/spelexander/instant-photo",
+  "scripts": {
+    "dev": "ladle serve",
+    "build": "esbuild ./src/instant-photo.tsx --bundle --outfile=dist/index.js",
+    "format": "pretty-quick"
+  },
+  "dependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  },
+  "devDependencies": {
+    "@ladle/react": "^0.11.0",
+    "@types/react": "^17.0.33",
+    "@types/react-dom": "^17.0.10",
+    "esbuild": "^0.14.29",
+    "husky": "^7.0.4",
+    "prettier": "^2.6.1",
+    "pretty-quick": "^3.1.3",
+    "typescript": "^4.5.4"
+  },
+  "keywords": [
+    "polaroid",
+    "fujifilm",
+    "instant",
+    "photo",
+    "retro",
+    "photogrpahy",
+    "camera"
+  ],
+  "files": [
+    "dist"
+  ],
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  }
+}
