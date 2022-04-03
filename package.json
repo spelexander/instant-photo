@@ -5,11 +5,13 @@
   "contributors": [
     "Alex Spence <spelexander93@gmail.com>"
   ],
-  "main": "dist/index.jsx",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
   "repository": "https://github.com/spelexander/instant-photo",
   "scripts": {
     "dev": "ladle serve",
-    "build": "tsc && esbuild ./src/instant-photo.tsx --minify --bundle --outfile=dist/index.jsx",
+    "build": "tsc && node build.js",
     "format": "pretty-quick"
   },
   "dependencies": {
