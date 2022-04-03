@@ -2,6 +2,7 @@ import React from "react";
 import { InstantPhoto } from "../instant-photo";
 import { Footer as FooterContent } from "./footer";
 
+
 export const Default = () => (
   <InstantPhoto
     filter="none"

@@ -1,29 +1,6 @@
-import React, { CSSProperties, ReactNode, useMemo } from "react";
+import React, { CSSProperties, useMemo } from "react";
 import styles from "./instant-photo.module.css";
-
-export type InstantPhotoVariant = "46mm" | "99mm";
-
-export type InstantPhotoSize = "small" | "large";
-
-export type InstantPhotoFilter =
-  | "polaroid"
-  | "vintage"
-  | "bloom"
-  | "greyscale"
-  | "none";
-
-export interface InstantPhotoProps {
-  image?: string;
-  variant?: InstantPhotoVariant;
-  size?: InstantPhotoSize;
-  alt?: string;
-  rotation?: number;
-  style?: CSSProperties;
-  photoStyle?: CSSProperties;
-  footer?: ReactNode;
-  filter?: InstantPhotoFilter;
-  showArtefacts?: boolean;
-}
+import {InstantPhotoFilter, InstantPhotoProps} from "./types";
 
 export const filters: Record<InstantPhotoFilter, string | undefined> = {
   polaroid: "contrast(250%) brightness(90%) grayscale(70%)",
