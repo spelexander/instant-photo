@@ -1,9 +1,9 @@
 
-# instant-photo
+# 📷 instant-photo
 
 <img src="./images/example-46mm.png" alt="Example screenshot" width="20%"/>
 
-React component that makes images look like a polaroid.
+📸 React component that makes images look like a polaroid.
 
 ## Usage
 
