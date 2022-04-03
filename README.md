@@ -1,26 +1,24 @@
 
-# instant-photo-frame 
+# instant-photo
 
 <img src="./images/example-46mm.png" alt="Example screenshot" width="20%"/>
 
 React component that makes images look like a polaroid.
 
-Live demo.
-
 ## Usage
 
 ```bash
-yarn add instant-photo-frame
+yarn add instant-photo
 ```
 or
 
 ```bash
-npm -i instant-photo-frame
+npm -i instant-photo
 ```
 
 ### Basic
 ```typescript jsx
-<InstantPhotoFrame
+<InstantPhoto
     image="https://images.unsplash.com/photo-1648142618804-92f908f93c10"
   />
 ```
@@ -29,7 +27,7 @@ npm -i instant-photo-frame
 'small' or 'large' (defaulting to large)
 
 ```typescript jsx
-<InstantPhotoFrame
+<InstantPhoto
     size="small"
     image="https://images.unsplash.com/photo-1648142618804-92f908f93c10"
   />
@@ -39,7 +37,7 @@ npm -i instant-photo-frame
 '46mm' or '99mm' (defaulting to 46mm)
 
 ```typescript jsx
-<InstantPhotoFrame
+<InstantPhoto
     variant="99mm"
     image="https://images.unsplash.com/photo-1648142618804-92f908f93c10"
   />
@@ -49,7 +47,7 @@ npm -i instant-photo-frame
 'polaroid' | 'vintage' | 'greyscale' | 'bloom' | 'none' (defaulting to polaroid)
 
 ```typescript jsx
-<InstantPhotoFrame
+<InstantPhoto
     filter="vintage"
     image="https://images.unsplash.com/photo-1648142618804-92f908f93c10"
   />
