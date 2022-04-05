@@ -5,7 +5,7 @@
 
 📸 React component that makes images look like a polaroid picture.
 
-- Live demo
+- [Live demo](https://instant-photo.pages.dev/)
 
 
 ```bash

@@ -13,7 +13,7 @@
     "dev": "ladle serve",
     "build": "node build.js",
     "build:types": "tsc",
-    "build:demo": "mkdir -p dist-demo && ladle build --out dist-demo",
+    "build:demo": "ladle build --out dist-demo",
     "format": "pretty-quick"
   },
   "dependencies": {
@@ -29,7 +29,8 @@
     "husky": "^7.0.4",
     "prettier": "^2.6.1",
     "pretty-quick": "^3.1.3",
-    "typescript": "^4.6.3"
+    "typescript": "^4.6.3",
+    "vite-plugin-react-css-modules": "^1.0.0"
   },
   "keywords": [
     "polaroid",
