@@ -1,5 +1,6 @@
 import React from "react";
 import { InstantPhoto } from "../instant-photo";
+
 import { Footer as FooterContent } from "./footer";
 
 
@@ -53,21 +54,25 @@ export const Filter = () => (
   <div style={{ display: "flex" }}>
     <InstantPhoto
       filter="polaroid"
+      size="small"
       rotation={4}
       image="https://imagedelivery.net/_c4jAFjxf-vVYrGvQV8G2A/8a24ef4c-cc52-440e-38fa-cffa45486d00/public"
     />
     <InstantPhoto
       filter="vintage"
+      size="small"
       rotation={3}
       image="https://imagedelivery.net/_c4jAFjxf-vVYrGvQV8G2A/8a24ef4c-cc52-440e-38fa-cffa45486d00/public"
     />
     <InstantPhoto
       filter="greyscale"
+      size="small"
       rotation={-7}
       image="https://imagedelivery.net/_c4jAFjxf-vVYrGvQV8G2A/8a24ef4c-cc52-440e-38fa-cffa45486d00/public"
     />
     <InstantPhoto
       filter="bloom"
+      size="small"
       rotation={5}
       image="https://imagedelivery.net/_c4jAFjxf-vVYrGvQV8G2A/8a24ef4c-cc52-440e-38fa-cffa45486d00/public"
     />
