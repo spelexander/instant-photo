@@ -1,6 +1,6 @@
 {
   "name": "instant-photo",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "license": "MIT",
   "contributors": [
     "Alex Spence <spelexander93@gmail.com>"
@@ -11,10 +11,12 @@
   "repository": "https://github.com/spelexander/instant-photo",
   "scripts": {
     "dev": "ladle serve",
-    "build": "tsc && node build.js",
+    "build": "node build.js",
+    "build:types": "tsx",
     "format": "pretty-quick"
   },
   "dependencies": {
+    "instant-photo": "^1.0.7",
     "react": "^18.0.0",
     "react-dom": "^18.0.0"
   },
