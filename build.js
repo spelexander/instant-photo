@@ -8,8 +8,8 @@ const shared = {
     entryPoints: [entryFile],
     external: Object.keys(dependencies),
     logLevel: "info",
-    minify: false,
-    sourcemap: true,
+    minify: true,
+    sourcemap: false,
     plugins: [
         cssModulesPlugin()
     ]
