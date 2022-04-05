@@ -13,6 +13,7 @@
     "dev": "ladle serve",
     "build": "node build.js",
     "build:types": "tsc",
+    "build:demo": "ladle build --out dist-demo",
     "format": "pretty-quick"
   },
   "dependencies": {

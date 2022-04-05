@@ -3,54 +3,55 @@
 
 <img src="./images/example-46mm.png" alt="Example screenshot" width="20%"/>
 
-📸 React component that makes images look like a polaroid.
+📸 React component that makes images look like a polaroid picture.
 
-## Usage
+- Live demo
+
 
 ```bash
 yarn add instant-photo
-```
-or
-
-```bash
+# or
 npm -i instant-photo
 ```
 
-### Basic
-```typescript jsx
+### Usage
+
+```jsx
+import { InstantPhoto } from 'instant-photo';
+
 <InstantPhoto
     image="https://images.unsplash.com/photo-1648142618804-92f908f93c10"
   />
 ```
 
-### Size
-'small' or 'large' (defaulting to large)
+Size 'small' or 'large' (defaulting to large)
 
-```typescript jsx
+```jsx
 <InstantPhoto
     size="small"
-    image="https://images.unsplash.com/photo-1648142618804-92f908f93c10"
   />
 ```
 
-### Variants
-'46mm' or '99mm' (defaulting to 46mm)
+Variants '46mm' or '99mm' (defaulting to 46mm)
 
-```typescript jsx
+```jsx
 <InstantPhoto
     variant="99mm"
-    image="https://images.unsplash.com/photo-1648142618804-92f908f93c10"
   />
 ```
 
-### Filters
-'polaroid' | 'vintage' | 'greyscale' | 'bloom' | 'none' (defaulting to polaroid)
+Filters 'polaroid' | 'vintage' | 'greyscale' | 'bloom' | 'none' (defaulting to polaroid)
 
-```typescript jsx
+```jsx
 <InstantPhoto
     filter="vintage"
-    image="https://images.unsplash.com/photo-1648142618804-92f908f93c10"
   />
+```
+
+No image, black placeholder film.
+
+```jsx
+<InstantPhoto />
 ```
 
 For more examples see `src/examples/examples.stories.tsx`
