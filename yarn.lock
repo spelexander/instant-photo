@@ -2211,6 +2211,14 @@ inherits@2, inherits@2.0.4:
   resolved "https://registry.yarnpkg.com/inherits/-/inherits-2.0.4.tgz#0fa2c64f932917c3433a0ded55363aae37416b7c"
   integrity sha512-k/vGaX4/Yla3WzyMCvTQOXYeIHvqOKtnqBduzTHpzpQZzAskKMhZ2K+EnBiSM9zGSoIFeMpXKxa4dYeZIQqewQ==
 
+instant-photo@^1.0.12:
+  version "1.0.12"
+  resolved "https://registry.yarnpkg.com/instant-photo/-/instant-photo-1.0.12.tgz#51ef7fc50e7d48fd195f51381a04aec666c64eae"
+  integrity sha512-sQSbo0mYCd5x4UQiIQeOb7khR4a6QE5+4fXu3ai1XaIgJsSdw2tch8F3/DSKCnYwYKHPgq8JtlTKZLu95M3+VQ==
+  dependencies:
+    react "^18.0.0"
+    react-dom "^18.0.0"
+
 invariant@^2.2.4:
   version "2.2.4"
   resolved "https://registry.yarnpkg.com/invariant/-/invariant-2.2.4.tgz#610f3c92c9359ce1db616e538008d23ff35158e6"

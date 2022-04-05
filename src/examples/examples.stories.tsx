@@ -1,5 +1,5 @@
 import React from "react";
-import { InstantPhoto } from "../instant-photo";
+import { InstantPhoto } from "instant-photo";
 
 import { Footer as FooterContent } from "./footer";
 
