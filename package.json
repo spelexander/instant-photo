@@ -1,6 +1,6 @@
 {
   "name": "instant-photo",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "license": "MIT",
   "contributors": [
     "Alex Spence <spelexander93@gmail.com>"
@@ -16,7 +16,6 @@
     "format": "pretty-quick"
   },
   "dependencies": {
-    "instant-photo": "^1.0.9",
     "react": "^18.0.0",
     "react-dom": "^18.0.0"
   },
