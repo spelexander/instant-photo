@@ -1,6 +1,5 @@
 const { build } = require("esbuild");
 const { dependencies } = require("./package.json");
-const cssModulesPlugin = require("esbuild-css-modules-plugin");
 
 const entryFile = "src/instant-photo.tsx";
 const shared = {
@@ -10,9 +9,6 @@ const shared = {
     logLevel: "info",
     minify: false,
     sourcemap: true,
-    plugins: [
-        cssModulesPlugin()
-    ]
 };
 
 build({
