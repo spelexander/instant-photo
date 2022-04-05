@@ -1,7 +1,6 @@
 import React, { CSSProperties, useMemo } from "react";
+import styles from "./instant-photo.module.css";
 import {InstantPhotoFilter, InstantPhotoProps} from "./types";
-
-import "./instant-photo.css";
 
 export const filters: Record<InstantPhotoFilter, string | undefined> = {
   polaroid: "contrast(250%) brightness(90%) grayscale(70%)",
@@ -38,37 +37,37 @@ export const InstantPhoto: React.FC<InstantPhotoProps> = ({
     switch (variant) {
       case "99mm":
         return {
-          frame: isSmall ? 'frame99mmSmall' : 'frame99mmLarge',
-          image: isSmall ? 'photo99mmSmall' : 'photo99mmLarge',
+          frame: isSmall ? styles.frame99mmSmall : styles.frame99mmLarge,
+          image: isSmall ? styles.photo99mmSmall : styles.photo99mmLarge,
         };
       case "46mm":
       default:
     }
     return {
-      frame: isSmall ? 'frame46mmSmall' : 'frame46mmLarge',
-      image: isSmall ? 'photo46mmSmall' : 'photo46mmLarge',
+      frame: isSmall ? styles.frame46mmSmall : styles.frame46mmLarge,
+      image: isSmall ? styles.photo46mmSmall : styles.photo46mmLarge,
     };
   }, [variant, size]);
 
   return (
-    <div style={frameStyle} className={`frame ${classNames.frame}`}>
+    <div style={frameStyle} className={`${styles.frame} ${classNames.frame}`}>
       {image ? (
         <img
           style={imageStyle}
-          className={`photo ${classNames.image} photoBackground`}
+          className={`${styles.photo} ${classNames.image} ${styles.photoBackground}`}
           src={image}
           alt={alt}
         />
       ) : (
         <div
           style={photoStyle}
-          className={`photo ${classNames.image} photoBackground`}
+          className={`${styles.photo} ${classNames.image} ${styles.photoBackground}`}
         />
       )}
-      {footer && <div className="footer">{footer}</div>}
+      {footer && <div className={styles.footer}>{footer}</div>}
       {filter !== "none" && showArtefacts && (
         <div
-          className={`photo ${classNames.image} photoFilter`}
+          className={`${styles.photo} ${classNames.image} ${styles.photoFilter}`}
         />
       )}
     </div>
